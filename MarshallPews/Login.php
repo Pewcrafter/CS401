@@ -33,7 +33,7 @@
     		 	<div class="login_button"><input type="submit" value="Login"></div>
 			
    		</form>
-		<p> Don't have an account? <a href="create_account.php"> Create One! </a></p>
+		<p> Don't have an account? <a href="Create_account.php"> Create One! </a></p>
 		<?php	
 			require_once 'footer.php';
 		?>
