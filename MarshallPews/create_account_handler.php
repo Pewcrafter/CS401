@@ -23,12 +23,12 @@ if ($password == "validation error"){
 if(!$error){
 	if ($dao->usernameExists($username)) {
 		$_SESSION['username_error'] = "Sorry, that username is already in use. Please try another.";
-		header("Location: http://localhost/MarshallPews/Create_account.php");
+		header("Location: http://marshallpews.herokuapp.com/Create_account.php");
 		exit();
 	} else if ($dao->addUser($username, $password)) {
-		header("Location: http://localhost/MarshallPews/Login.php");
+		header("Location: http://marshallpews.herokuapp.com/Login.php");
 		exit();
 	}
 } else {
-	header("Location: http://localhost/MarshallPews/Create_account.php");
+	header("Location: http://marshallpews.herokuapp.com/Create_account.php");
 }
