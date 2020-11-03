@@ -13,6 +13,7 @@
 
 	<?php if(!empty($_SESSION['authenticated'])){ if($_SESSION['authenticated']){ ?>
 	<script type="text/javascript">document.getElementById('admin').style.display = 'inline';</script>
+  <script type="text/javascript">document.getElementById('login_button').style.display = 'none';</script>
 	<?php } } ?>
 
 
