@@ -6,6 +6,7 @@
 	<head>
 		<title>The Marshall Company Pews</title>
 		<link rel="stylesheet" type="text/CSS" href="src/CSS/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,200&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<?php
