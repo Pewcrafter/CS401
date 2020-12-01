@@ -24,15 +24,15 @@ if(!$error){
 	$password = md5($password);
 	if ($dao->login($username, $password)) {
 		$_SESSION['authenticated'] = true;
-		header("Location: http://localhost/MarshallPews/Admin.php");
+		header("Location: http://marshallpews.herokuapp.com/Admin.php");
 		exit();
 	} else {
 		$_SESSION['authenticated'] = false;
 		$_SESSION['login_error'] = "Incorrect username or password";
-		header("Location: http://localhost/MarshallPews/Login.php");
+		header("Location: http://marshallpews.herokuapp.com/Login.php");
 		exit();
 	}
 } else {
 	$_SESSION['login_error'] = "Incorrect username or password";
-	header("Location: http://localhost/MarshallPews/Login.php");
+	header("Location: http://marshallpews.herokuapp.com/Login.php");
 }
